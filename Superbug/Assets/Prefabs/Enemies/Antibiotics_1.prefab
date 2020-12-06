@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 1110507106431936650}
   - component: {fileID: 1110507106431936661}
   - component: {fileID: 1655504407159966666}
-  - component: {fileID: 6571023442172115941}
   - component: {fileID: 6308670885744921488}
+  - component: {fileID: 6571023442172115941}
+  - component: {fileID: 4506312040820741035}
+  - component: {fileID: 8031631598384185645}
   m_Layer: 0
   m_Name: Antibiotics_1
   m_TagString: Enemy
@@ -105,20 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6571023442172115941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110507106431936651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dec789fad7a5fd14791a2d1149dbfcc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 1110507106431936651}
-  moveSpeed: -1.5
 --- !u!61 &6308670885744921488
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -145,3 +133,48 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &6571023442172115941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110507106431936651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec789fad7a5fd14791a2d1149dbfcc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 1110507106431936651}
+  moveSpeed: -1.5
+--- !u!114 &4506312040820741035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110507106431936651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551b22eff453d8b45805ae9c87c8756f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 1110507106431936651}
+  enemyHealth: 100
+  bulletDamage: 25
+--- !u!114 &8031631598384185645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110507106431936651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8e7a0c98d196147bc6a2e7bdee1624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 2930926455245727027, guid: 96c266659ae72c44c869b571aea69a42, type: 3}
+  enemy: {fileID: 1110507106431936651}
+  enemyHealth: 100
+  bulletDamage: 25
