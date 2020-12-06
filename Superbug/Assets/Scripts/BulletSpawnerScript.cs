@@ -50,9 +50,18 @@ public class BulletSpawnerScript : MonoBehaviour {
 		}
 
 		
-		// Block player movement too far into screen
-		if (transform.position.x > -2) {
+		// Block player movement too far into screen and add push against blood flow
+		if (transform.position.x > -6 && transform.position.x < -3) {
 			moveInput = new Vector2(-2f, 0.5f);
+			moveVelocity = moveInput * moveSpeed;
+		}		
+		if (transform.position.x > -3 && transform.position.x < 0) {
+			moveInput = new Vector2(-4f, 0.5f);
+			moveVelocity = moveInput * moveSpeed;
+		}
+		
+		if (transform.position.x > 0 && transform.position.x < 3) {
+			moveInput = new Vector2(-6f, 0.5f);
 			moveVelocity = moveInput * moveSpeed;
 		}
 		
