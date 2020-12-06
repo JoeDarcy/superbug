@@ -1,16 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BulletDamageScript : MonoBehaviour
 {
     public GameObject enemy;
 
+    public Slider sliderInstance;
+
     private float enemyHealth = 100.0f;
     private float bulletDamage = 25.0f;
 
-    private static float infection = 0;
+    public static float infection = 0;
     private static float infectionRate = 10;
+
+
 
     private bool enemyIsDead = false;
 
@@ -33,6 +38,9 @@ public class BulletDamageScript : MonoBehaviour
         if (enemyHealth <= 0) {
             GameObject.Destroy(enemy);
         }
+
+        // Set slider value to match enemies killed
+        sliderInstance.value += infection;
     }
 
 	private void OnTriggerEnter2D(Collider2D collision) {
@@ -66,5 +74,7 @@ public class BulletDamageScript : MonoBehaviour
         }       
 	}
 
-    
+    public void OnValueChanged(float value) {
+        Debug.Log("New value: " + value);
+    }
 }

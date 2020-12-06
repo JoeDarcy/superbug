@@ -1,18 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InfectionSliderScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public GameObject bulletInfection;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public Slider sliderInstance;
+
+	private void Start() {
+		/*
+		sliderInstance.minValue = 0;
+		sliderInstance.maxValue = 100;
+		sliderInstance.wholeNumbers = true;
+		sliderInstance.value = 50;
+		*/
+	}
+
+	private void Update() {
+
+		//sliderInstance.value += 10;
+	}
+
+	public void OnValueChanged(float value) {
+		Debug.Log("New value: " + value);
+	}
 }
