@@ -15,18 +15,21 @@ public class EnemyMovementScript : MonoBehaviour
 	private Vector2 moveInput;
 	private Vector2 moveVelocity;
 
+	public float enemyHealth = 100;
+
 	// Getting the rigidbody2D component
 	private void Start() {
 		enemyRigidbody2D = GetComponent<Rigidbody2D>();
 	}
 
 	// Sets enemy movement velocity and direction 
-	private void Update() {
+	private void Update() {				
+
 		moveInput = new Vector3(2f, 0f);
 		moveVelocity = moveInput * moveSpeed;
 
 		// Destroys enemies that leave the bounds of the camera view
-		if (transform.position.x <= -12) {
+		if (transform.position.x <= -12 || enemyHealth <= 0) {
 			GameObject.Destroy(enemy);
 		}
 	}
@@ -35,4 +38,5 @@ public class EnemyMovementScript : MonoBehaviour
 	private void FixedUpdate() {
 		enemyRigidbody2D.velocity = moveVelocity;
 	}
+
 }

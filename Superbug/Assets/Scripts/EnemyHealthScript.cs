@@ -7,7 +7,7 @@ public class EnemyHealthScript : MonoBehaviour
     public GameObject bullet;
     public GameObject enemy;
 
-    private float enemyHealth = 0.0f;
+    private float enemyHealth = 100.0f;
     private float bulletDamage = 0.0f;
 
     private bool enemyIsDead = false;
@@ -24,9 +24,4 @@ public class EnemyHealthScript : MonoBehaviour
         
     }
 
-	private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.tag == "Bullet") {
-            Debug.Log("Enemy damage triggered");
-        }
-    }
 }

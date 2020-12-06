@@ -160,8 +160,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1110507106431936651}
-  enemyHealth: 100
-  bulletDamage: 25
 --- !u!114 &8031631598384185645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,5 +174,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 2930926455245727027, guid: 96c266659ae72c44c869b571aea69a42, type: 3}
   enemy: {fileID: 1110507106431936651}
-  enemyHealth: 100
-  bulletDamage: 25

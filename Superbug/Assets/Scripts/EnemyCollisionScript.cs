@@ -12,6 +12,7 @@ public class EnemyCollisionScript : MonoBehaviour
 	private void OnCollisionEnter(Collision collision) {
 		if (bullet) {
 			GameObject.Destroy(enemy);
+			Debug.Log("Needed script");
 		}
 	}
 }
