@@ -89,6 +89,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 4498454511371801994}
   moveSpeed: -1.5
+  enemyHealth: 100
 --- !u!212 &772518585460163776
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -267,7 +268,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.1286962, y: -0.12276566}
+  m_Offset: {x: -1.1520395, y: -0.16067898}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -278,7 +279,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2492166, y: 1.5632784}
+  m_Size: {x: 0.8290334, y: 1.1608183}
   m_EdgeRadius: 0
 --- !u!114 &967312064950507006
 MonoBehaviour:
@@ -308,5 +309,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 2930926455245727027, guid: 96c266659ae72c44c869b571aea69a42, type: 3}
   enemy: {fileID: 4498454511371801994}
-  enemyHealth: 100
-  bulletDamage: 25

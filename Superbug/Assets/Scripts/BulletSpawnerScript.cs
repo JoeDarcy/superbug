@@ -19,6 +19,7 @@ public class BulletSpawnerScript : MonoBehaviour {
 	public float spawnerMovementSpeed = 5;
 	private float spawnerTimer = 0.0f;
 	private float moveTimer = 0.0f;
+	private float cooldownTimer = 0.0f;
 
 	// Getting rigidbody2D component
 	private void Start() {
@@ -73,10 +74,19 @@ public class BulletSpawnerScript : MonoBehaviour {
 		bulletSpawnerRigidbody2D.velocity = moveVelocity;
 
 		spawnerTimer += Time.deltaTime;
+		cooldownTimer += Time.deltaTime;
 
-		if (Input.GetKeyDown("space")) {
+		// Fire while holding spacebar but cooldown timer in effect
+		if (Input.GetKey("space") && cooldownTimer > 0.75) {
 			Instantiate(bulletSpawner, transform.position, Quaternion.identity);
+			cooldownTimer = 0;
 			spawnerTimer = 0;
 		}
+		
+		// Experimental feature: Fire when space is pressed but with slight cooldown timer
+		if (Input.GetKeyDown("space") && cooldownTimer > 0.5) {
+			Instantiate(bulletSpawner, transform.position, Quaternion.identity);					
+		}
+		
 	}
 }
