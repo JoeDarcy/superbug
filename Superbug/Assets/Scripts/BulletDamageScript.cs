@@ -13,7 +13,7 @@ public class BulletDamageScript : MonoBehaviour
 
     // Infection static variables
     public static int infection = 0;
-    private static int infectionRate = 10;
+    private static int infectionRate = 1;
 
 
 
