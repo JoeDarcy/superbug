@@ -14,11 +14,6 @@ public class PlayerHealthScript : MonoBehaviour
 
     private float timer = 0;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
 
     // Update is called once per frame
     void Update() {
@@ -32,11 +27,9 @@ public class PlayerHealthScript : MonoBehaviour
         } else if (playerHealth == 0) {
             GameObject.Destroy(health_1);
 
-            // Change scene on death
-            if (timer > 5) {
-                SceneManager.LoadScene(6);
-            }
-            
+            playerHealth = 3;
+            SceneManager.LoadScene("LoseScene");
+                     
         }
     }
 

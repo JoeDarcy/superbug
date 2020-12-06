@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class InfectionSliderScript : MonoBehaviour
 {
@@ -22,6 +23,10 @@ public class InfectionSliderScript : MonoBehaviour
 
 
 	private void Update() {
+
+		if (infectionTotal >=100) {
+			SceneManager.LoadScene("WinScene");
+		}
 
 		infectionTotal = BulletDamageScript.infection;
 
