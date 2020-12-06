@@ -11,8 +11,9 @@ public class BulletDamageScript : MonoBehaviour
     private float enemyHealth = 100.0f;
     private float bulletDamage = 25.0f;
 
-    public static float infection = 0;
-    private static float infectionRate = 10;
+    // Infection static variables
+    public static int infection = 0;
+    private static int infectionRate = 10;
 
 
 

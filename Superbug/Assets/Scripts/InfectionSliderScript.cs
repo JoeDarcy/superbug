@@ -9,6 +9,8 @@ public class InfectionSliderScript : MonoBehaviour
 
 	public Slider sliderInstance;
 
+	private static int infectionTotal;
+
 	private void Start() {
 		/*
 		sliderInstance.minValue = 0;
@@ -18,9 +20,12 @@ public class InfectionSliderScript : MonoBehaviour
 		*/
 	}
 
+
 	private void Update() {
 
-		//sliderInstance.value += 10;
+		infectionTotal = BulletDamageScript.infection;
+
+		sliderInstance.value = infectionTotal;
 	}
 
 	public void OnValueChanged(float value) {
