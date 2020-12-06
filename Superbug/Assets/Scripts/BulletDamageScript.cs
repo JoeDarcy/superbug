@@ -9,11 +9,21 @@ public class BulletDamageScript : MonoBehaviour
     private float enemyHealth = 100.0f;
     private float bulletDamage = 25.0f;
 
+    private static float infection = 0;
+    private static float infectionRate = 10;
+
     private bool enemyIsDead = false;
+
+    private static void infectionSlider(float infection, float infectionRate) {
+
+        infection += infectionRate * 10;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        
+
         
     }
 
@@ -37,14 +47,24 @@ public class BulletDamageScript : MonoBehaviour
 
             
 
-                Debug.Log("Enemy is dead");
+            Debug.Log("Enemy is dead");
 
                 // Genius level code! https://www.youtube.com/watch?v=LMOGPN5p4NU&ab_channel=AlexanderZotov
                 Destroy(collision.gameObject);
                 Destroy(gameObject);
-            
+
+
+            // Increment the infection rate 
+            infectionSlider(infection, infectionRate);
+
+            infection += infectionRate;
+
+
+            Debug.Log("Infection = " + infection + "%");
             
 
         }       
-	}  
+	}
+
+    
 }
