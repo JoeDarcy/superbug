@@ -7,7 +7,6 @@ public class BulletDamageScript : MonoBehaviour
 {
     public GameObject enemy;
 
-    public Slider sliderInstance;
 
     private float enemyHealth = 100.0f;
     private float bulletDamage = 25.0f;
@@ -19,10 +18,6 @@ public class BulletDamageScript : MonoBehaviour
 
     private bool enemyIsDead = false;
 
-    private static void infectionSlider(float infection, float infectionRate) {
-
-        infection += infectionRate * 10;
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -38,9 +33,6 @@ public class BulletDamageScript : MonoBehaviour
         if (enemyHealth <= 0) {
             GameObject.Destroy(enemy);
         }
-
-        // Set slider value to match enemies killed
-        sliderInstance.value += infection;
     }
 
 	private void OnTriggerEnter2D(Collider2D collision) {
@@ -62,9 +54,6 @@ public class BulletDamageScript : MonoBehaviour
                 Destroy(gameObject);
 
 
-            // Increment the infection rate 
-            infectionSlider(infection, infectionRate);
-
             infection += infectionRate;
 
 
@@ -73,8 +62,4 @@ public class BulletDamageScript : MonoBehaviour
 
         }       
 	}
-
-    public void OnValueChanged(float value) {
-        Debug.Log("New value: " + value);
-    }
 }

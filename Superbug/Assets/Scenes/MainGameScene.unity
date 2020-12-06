@@ -1538,6 +1538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1941d71d69f164db6e10a69363dd24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletInfection: {fileID: 2930926455245727027, guid: 96c266659ae72c44c869b571aea69a42,
+    type: 3}
   sliderInstance: {fileID: 1619971525}
 --- !u!4 &1503954801
 Transform:
