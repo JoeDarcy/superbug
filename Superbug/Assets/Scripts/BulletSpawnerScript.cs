@@ -18,6 +18,7 @@ public class BulletSpawnerScript : MonoBehaviour {
 	// Setting spawner movement speed and initialising spawner timer
 	public float spawnerMovementSpeed = 5;
 	private float spawnerTimer = 0.0f;
+	private float moveTimer = 0.0f;
 
 	// Getting rigidbody2D component
 	private void Start() {
@@ -26,13 +27,35 @@ public class BulletSpawnerScript : MonoBehaviour {
 
 	// Calculate inputs and velocity
 	private void Update() {
-
+		/*
 		moveInput = new Vector2(0f, -0.5f);
 		moveVelocity = moveInput * moveSpeed;
 
 		// Not needed? Test
 		moveInput = new Vector2(0f, 0.5f);
 		moveVelocity = moveInput * moveSpeed;
+		*/
+
+		moveTimer += Time.deltaTime;
+
+	
+		if (moveTimer < 2.5) {
+			moveInput = new Vector2(-0.2f, -0.5f);
+			moveVelocity = moveInput * moveSpeed;
+		} else if (moveTimer < 5) {
+			moveInput = new Vector2(-0.2f, 0.5f);
+			moveVelocity = moveInput * moveSpeed;
+		} else {
+			moveTimer = 0;
+		}
+
+		
+		// Block player movement too far into screen
+		if (transform.position.x > -2) {
+			moveInput = new Vector2(-2f, 0.5f);
+			moveVelocity = moveInput * moveSpeed;
+		}
+		
 	}
 
 	// Set bullet velocity and trigger firing with spacebar

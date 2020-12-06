@@ -111,7 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpawner: {fileID: 2930926455245727027, guid: 96c266659ae72c44c869b571aea69a42,
     type: 3}
-  moveSpeed: 5
+  moveSpeed: 0
   spawnerMovementSpeed: 5
 --- !u!114 &2643720181161793468
 MonoBehaviour:
@@ -125,6 +125,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed05a573abd25d449a060dc96992538, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health_3: {fileID: 0}
+  health_2: {fileID: 0}
+  health_1: {fileID: 0}
 --- !u!1 &905385079676741820
 GameObject:
   m_ObjectHideFlags: 0
