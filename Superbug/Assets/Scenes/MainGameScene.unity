@@ -1333,6 +1333,12 @@ MonoBehaviour:
   backgroundLayer: {fileID: 8334549291120846617, guid: d7304b27472eeee42aedd0d2fa3218da,
     type: 3}
   timer: 17.5
+--- !u!1 &1099120974 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2027874286847195769, guid: 6c19d9c99bab7a74a99ed921892b335c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1388260947}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1124709076 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3480909155295007045, guid: 78cc98424f27fb44ab0d6a446d723514,
@@ -1508,6 +1514,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2027874286847195765, guid: 6c19d9c99bab7a74a99ed921892b335c,
     type: 3}
   m_PrefabInstance: {fileID: 1388260947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1389992223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2027874286847195769, guid: 6c19d9c99bab7a74a99ed921892b335c,
+    type: 3}
+  m_PrefabInstance: {fileID: 341148563}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1503954799
 GameObject:
@@ -1882,6 +1894,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693912912}
   m_CullTransparentMesh: 0
+--- !u!1 &1709932844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2027874286847195769, guid: 6c19d9c99bab7a74a99ed921892b335c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3452652568424352131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1789659431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,6 +1909,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1789659432}
+  - component: {fileID: 1789659433}
   m_Layer: 0
   m_Name: Hp
   m_TagString: Untagged
@@ -1915,6 +1934,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1789659433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789659431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bed05a573abd25d449a060dc96992538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health_3: {fileID: 1389992223}
+  health_2: {fileID: 1099120974}
+  health_1: {fileID: 1709932844}
 --- !u!1 &1827217239
 GameObject:
   m_ObjectHideFlags: 0
