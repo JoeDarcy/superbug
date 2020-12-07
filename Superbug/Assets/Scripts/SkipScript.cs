@@ -7,7 +7,7 @@ public class SkipScript : MonoBehaviour
 {
     void Update() {
         if (Input.GetKey("escape")) {
-            SceneManager.LoadScene("FuneralCutScene");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
