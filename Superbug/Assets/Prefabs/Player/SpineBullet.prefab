@@ -154,13 +154,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5959064328301623709}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 551b22eff453d8b45805ae9c87c8756f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1110507106431936651, guid: c914f6f5311bb1a49a6bb9f7883f836b, type: 3}
-  sliderInstance: {fileID: 0}
 --- !u!1 &6026540551892492011
 GameObject:
   m_ObjectHideFlags: 0

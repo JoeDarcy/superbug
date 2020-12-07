@@ -10,11 +10,17 @@ public class InfectionSliderScript : MonoBehaviour
 
 	public Slider sliderInstance;
 
-	private static int infectionTotal;
+	private int infectionTotal;
+
+	public static bool playerIsDead = false;
+
+	private int currentScene;
 
 	private void Start() {
 		// Zero slider on start
-		sliderInstance.value = 0;	
+		infectionTotal = 0;
+
+		currentScene = SceneTrackerScript.sceneNumber;
 	}
 
 
@@ -32,8 +38,17 @@ public class InfectionSliderScript : MonoBehaviour
 	}
 
 	public void NextSceneFunction() {
-		if (infectionTotal >= 100) {
+		if (infectionTotal >= 33 && currentScene == 5) {
+
  			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		}
+		else if (infectionTotal >= 66 && currentScene == 7) {
+
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		}
+		else if (infectionTotal >= 100 && currentScene == 9) {
+
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 		}
 	}
 	

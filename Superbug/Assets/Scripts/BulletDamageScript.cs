@@ -14,10 +14,16 @@ public class BulletDamageScript : MonoBehaviour
     public static int infection = 0;
     private static int infectionRate = 1;
 
+  
 
-    // Update is called once per frame
-    void Update()
-    {
+	private void Start() {
+        // Zero infection total 
+        //infection = 0;
+    }
+
+	// Update is called once per frame
+	void Update() {   
+
         if (enemyHealth <= 0) {
             GameObject.Destroy(enemy);
         }
