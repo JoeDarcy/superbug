@@ -38,15 +38,15 @@ public class InfectionSliderScript : MonoBehaviour
 	}
 
 	public void NextSceneFunction() {
-		if (infectionTotal >= 33 && currentScene == 5) {
+		if (infectionTotal >= 100 && currentScene == 5) {
 
  			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 		}
-		else if (infectionTotal >= 66 && currentScene == 7) {
+		else if (infectionTotal >= 200 && currentScene == 7) {
 
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 		}
-		else if (infectionTotal >= 100 && currentScene == 9) {
+		else if (infectionTotal >= 300 && currentScene == 9) {
 
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 		}
