@@ -9,24 +9,11 @@ public class BulletDamageScript : MonoBehaviour
 
 
     private float enemyHealth = 100.0f;
-    private float bulletDamage = 25.0f;
 
     // Infection static variables
     public static int infection = 0;
     private static int infectionRate = 1;
 
-
-
-    private bool enemyIsDead = false;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-
-        
-    }
 
     // Update is called once per frame
     void Update()

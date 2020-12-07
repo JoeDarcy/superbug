@@ -82,7 +82,14 @@ public class BulletSpawnerScript : MonoBehaviour {
 			cooldownTimer = 0;
 			spawnerTimer = 0;
 		}
-		
+
+		// Mouse button controls
+		if (Input.GetMouseButtonDown(0) && cooldownTimer > 0.75) {
+			Instantiate(bulletSpawner, transform.position, Quaternion.identity);
+			cooldownTimer = 0;
+			spawnerTimer = 0;
+		}
+
 		// Experimental feature: Fire when space is pressed but with slight cooldown timer
 		if (Input.GetKeyDown("space") && cooldownTimer > 0.5) {
 			Instantiate(bulletSpawner, transform.position, Quaternion.identity);					
