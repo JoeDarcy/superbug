@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SkipScript : MonoBehaviour
 {
     void Update() {
-        if (Input.GetKey("escape")) {
+        if (Input.GetKey("return")) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }

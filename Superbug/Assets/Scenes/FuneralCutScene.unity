@@ -215,7 +215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &429356554
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -420,7 +420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &817365481
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -718,8 +718,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13, y: 137.7}
-  m_SizeDelta: {x: 583.88477, y: 103.03402}
+  m_AnchoredPosition: {x: 45, y: 128}
+  m_SizeDelta: {x: 692.239, y: 99.90954}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1804801194
 MonoBehaviour:
@@ -753,7 +753,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "JOE DARCY - CODING, DESIGN & MUSIC \n\t\t\t  (TRIANGLE)"
+  m_Text: "JOE DARCY - CODING, DESIGN & MUSIC\n              (TRIANGLE)"
 --- !u!222 &1804801195
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -942,7 +942,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2114834762
 MonoBehaviour:
   m_ObjectHideFlags: 0
