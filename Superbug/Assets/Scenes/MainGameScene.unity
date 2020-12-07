@@ -1415,6 +1415,80 @@ MonoBehaviour:
   backgroundLayer: {fileID: 8334549291120846617, guid: d7304b27472eeee42aedd0d2fa3218da,
     type: 3}
   timer: 17.5
+--- !u!1001 &941931157
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8527510609263208504, guid: cb452d0faa6df7c409b08b6eeff83a5e,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8527510609263208505, guid: cb452d0faa6df7c409b08b6eeff83a5e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 8527510609263208505, guid: cb452d0faa6df7c409b08b6eeff83a5e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 8527510609263208505, guid: cb452d0faa6df7c409b08b6eeff83a5e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8527510609263208505, guid: cb452d0faa6df7c409b08b6eeff83a5e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8527510609263208505, guid: cb452d0faa6df7c409b08b6eeff83a5e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8527510609263208505, guid: cb452d0faa6df7c409b08b6eeff83a5e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8527510609263208505, guid: cb452d0faa6df7c409b08b6eeff83a5e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8527510609263208505, guid: cb452d0faa6df7c409b08b6eeff83a5e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8527510609263208505, guid: cb452d0faa6df7c409b08b6eeff83a5e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8527510609263208505, guid: cb452d0faa6df7c409b08b6eeff83a5e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8527510609263208505, guid: cb452d0faa6df7c409b08b6eeff83a5e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8527510609263208510, guid: cb452d0faa6df7c409b08b6eeff83a5e,
+        type: 3}
+      propertyPath: m_Name
+      value: RedBloodCellsEnemySpawner (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cb452d0faa6df7c409b08b6eeff83a5e, type: 3}
 --- !u!1 &1099120974 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2027874286847195769, guid: 6c19d9c99bab7a74a99ed921892b335c,
@@ -2419,6 +2493,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 2643720181161793468, guid: 2923f6960ebfe8d49bb7acc92d575d42,
+        type: 3}
+      propertyPath: health_3
+      value: 
+      objectReference: {fileID: 1389992223}
+    - target: {fileID: 2643720181161793468, guid: 2923f6960ebfe8d49bb7acc92d575d42,
+        type: 3}
+      propertyPath: health_2
+      value: 
+      objectReference: {fileID: 1099120974}
+    - target: {fileID: 2643720181161793468, guid: 2923f6960ebfe8d49bb7acc92d575d42,
+        type: 3}
+      propertyPath: health_1
+      value: 
+      objectReference: {fileID: 1709932844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2923f6960ebfe8d49bb7acc92d575d42, type: 3}
 --- !u!1001 &2275444403023657604
@@ -2441,7 +2530,7 @@ PrefabInstance:
     - target: {fileID: 2275444401600060709, guid: 0c114ee8a501cc34d83db2feaafb327d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2275444401600060710, guid: 0c114ee8a501cc34d83db2feaafb327d,
         type: 3}
