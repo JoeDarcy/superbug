@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 public class StartControllerScript : MonoBehaviour
 {
 	public void StartFunction() {
-		SceneManager.LoadScene("MainGameScene");
+		SceneManager.LoadScene("Level_1_Scene");
 	}
 }

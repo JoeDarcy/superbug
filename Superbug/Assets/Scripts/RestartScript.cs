@@ -5,10 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class RestartScript : MonoBehaviour
 {
+	public static int originSceneNumber;
 
-    // Update is called once per frame
-    public void restartFunction()
+	private void Update() {
+
+		originSceneNumber = SceneTrackerScript.sceneNumber;
+	}
+
+	// Update is called once per frame
+	public void restartFunction()
     {
-        SceneManager.LoadScene("MainGameScene");
-    }
+		SceneManager.LoadScene(originSceneNumber);
+	}
 }

@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 public class OptionsControllerScript : MonoBehaviour
 {
     public void BackFunction() {
-		SceneManager.LoadScene("TempMenuScene");
+		SceneManager.LoadScene("MainMenuScene");
 	}
 }

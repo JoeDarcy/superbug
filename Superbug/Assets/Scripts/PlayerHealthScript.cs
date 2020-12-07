@@ -9,7 +9,6 @@ public class PlayerHealthScript : MonoBehaviour
     public GameObject health_2;
     public GameObject health_1;
 
-
     public static int playerHealth = 3;
 
     private float timer = 0;
@@ -23,7 +22,7 @@ public class PlayerHealthScript : MonoBehaviour
         if (playerHealth == 2) {
             GameObject.Destroy(health_3);
         } else if (playerHealth == 1) {
-            GameObject.Destroy(health_2 );
+            GameObject.Destroy(health_2);
         } else if (playerHealth == 0) {
             GameObject.Destroy(health_1);
 
