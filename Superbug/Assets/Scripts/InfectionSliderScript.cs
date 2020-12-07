@@ -25,7 +25,7 @@ public class InfectionSliderScript : MonoBehaviour
 	private void Update() {
 
 		if (infectionTotal >=100) {
-			SceneManager.LoadScene("WinScene");
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 		}
 
 		infectionTotal = BulletDamageScript.infection;
