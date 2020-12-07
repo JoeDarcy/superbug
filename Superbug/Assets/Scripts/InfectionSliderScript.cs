@@ -24,9 +24,7 @@ public class InfectionSliderScript : MonoBehaviour
 
 	private void Update() {
 
-		if (infectionTotal >=100) {
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-		}
+		NextSceneFunction();
 
 		infectionTotal = BulletDamageScript.infection;
 
@@ -36,4 +34,11 @@ public class InfectionSliderScript : MonoBehaviour
 	public void OnValueChanged(float value) {
 		Debug.Log("New value: " + value);
 	}
+
+	public void NextSceneFunction() {
+		if (infectionTotal >= 100) {
+ 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		}
+	}
+	
 }
