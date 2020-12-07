@@ -19,15 +19,15 @@ public class FuneralCutSceneScript : MonoBehaviour
             church.SetActive(false);
         }
 
-        if (timer >= 8) {
+        if (timer >= 10) {
             deathCloseup.SetActive(false);
         }
 
-        if (timer >= 12) {
+        if (timer >= 14) {
             canvas.SetActive(true);
         }
 
-        if (timer >= 20) {
+        if (timer >= 26) {
             Application.Quit();
         }
     }

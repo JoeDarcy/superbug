@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/MainMenuScene.unity
-    guid: 3d10ad41df05a4d4cb59b7045eda07eb
   - enabled: 1
     path: Assets/Scenes/TempMenuScene.unity
     guid: fa603b455aa7eb54cbcec7ce737e29bb
@@ -27,8 +24,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MainGameScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/PharmacyScene.unity
+    guid: f4a4a1e89e1938d4abc2885dbb347d52
+  - enabled: 1
     path: Assets/Scenes/Level_2_Scene.unity
     guid: 89ffeb26ae91e4649a61dc2d5bcd17ff
+  - enabled: 1
+    path: Assets/Scenes/MilitaryBaseScene.unity
+    guid: a590a69cf34a6894395fb7933efce66b
   - enabled: 1
     path: Assets/Scenes/Level_3_Scene.unity
     guid: 2e1730058f3ec284fa7808203f8de771
@@ -36,9 +39,6 @@ EditorBuildSettings:
     path: Assets/Scenes/LoseScene.unity
     guid: 1cb0488b864d85b4b8ea9135ac847cad
   - enabled: 1
-    path: Assets/Scenes/WinScene.unity
-    guid: 93a989afa87e8e64d955213a4d37d328
-  - enabled: 1
-    path: Assets/Scenes/CreditsScene.unity
-    guid: 86678aed7122e95409cf324301932ab2
+    path: Assets/Scenes/FuneralCutScene.unity
+    guid: 2565322c3f55cda47b3dbd6a18eaf616
   m_configObjects: {}
