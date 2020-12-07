@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class AudioControllerScript : MonoBehaviour {
 
-	//public string sceneToKillMusic;
-	static bool created = false;
+	public string sceneToKillMusic;
+	public static bool created = false;
 
 	private void Start() {
+
+		CheckSceneToKill();
+
 		if (!created) {
 			DontDestroyOnLoad(this.gameObject);
 
@@ -21,8 +24,8 @@ public class AudioControllerScript : MonoBehaviour {
 		}			
 	}
 
-	private void Update() {
-		/*
+	private void CheckSceneToKill() {
+		
 		Scene currentScene = SceneManager.GetActiveScene();
 
 		string sceneName = currentScene.name;
@@ -30,7 +33,7 @@ public class AudioControllerScript : MonoBehaviour {
 		if (sceneName == sceneToKillMusic) {
 			GameObject.Destroy(this);
 		}
-		*/
+		
 	}
 
 
