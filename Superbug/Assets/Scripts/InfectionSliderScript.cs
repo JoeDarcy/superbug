@@ -17,8 +17,6 @@ public class InfectionSliderScript : MonoBehaviour
 	private int currentScene;
 
 	private void Start() {
-		// Zero slider on start
-		infectionTotal = 0;
 
 		currentScene = SceneTrackerScript.sceneNumber;
 	}
