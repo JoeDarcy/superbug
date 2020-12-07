@@ -13,12 +13,8 @@ public class InfectionSliderScript : MonoBehaviour
 	private static int infectionTotal;
 
 	private void Start() {
-		/*
-		sliderInstance.minValue = 0;
-		sliderInstance.maxValue = 100;
-		sliderInstance.wholeNumbers = true;
-		sliderInstance.value = 50;
-		*/
+		// Zero slider on start
+		sliderInstance.value = 0;	
 	}
 
 
