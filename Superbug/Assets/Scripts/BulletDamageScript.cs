@@ -27,26 +27,12 @@ public class BulletDamageScript : MonoBehaviour
         if (collision.gameObject.tag == "Enemy") {               
             // Don't forget ^ this bit. Gets the emeny gameObject
 
-            Debug.Log("Bullet damage triggered");
-
-            //enemyHealth -= bulletDamage;
-
-            Debug.Log(enemyHealth);
-
-            
-
-            Debug.Log("Enemy is dead");
-
                 // Genius level code! https://www.youtube.com/watch?v=LMOGPN5p4NU&ab_channel=AlexanderZotov
                 Destroy(collision.gameObject);
                 Destroy(gameObject);
 
 
-            infection += infectionRate;
-
-
-            Debug.Log("Infection = " + infection + "%");
-            
+            infection += infectionRate;        
 
         }       
 	}
