@@ -224,6 +224,11 @@ PrefabInstance:
       propertyPath: music
       value: HankyCutSceneMusic
       objectReference: {fileID: 0}
+    - target: {fileID: 260583098553297011, guid: c61e0d987c87c5e4a808426066909b61,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c61e0d987c87c5e4a808426066909b61, type: 3}
 --- !u!1001 &341148563
@@ -345,7 +350,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353888145}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 6dd8d854ccb983941a3a8ea2885ee2ad,
     type: 2}
@@ -1810,6 +1815,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1690269450}
+  - component: {fileID: 1690269451}
   m_Layer: 0
   m_Name: MainGameMusic
   m_TagString: Untagged
@@ -1832,6 +1838,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1690269451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690269449}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0629c9525fe8d469c0b47a52cfe23c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToKillMusic: PharmacyCutScene
 --- !u!1 &1693912912
 GameObject:
   m_ObjectHideFlags: 0

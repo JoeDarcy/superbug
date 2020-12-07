@@ -925,7 +925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0629c9525fe8d469c0b47a52cfe23c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToKillMusic: HankyCutScene
+  sceneToKillMusic: PharmacyScene
 --- !u!1 &2042434427
 GameObject:
   m_ObjectHideFlags: 0

@@ -362,7 +362,7 @@ PrefabInstance:
     - target: {fileID: 260583098553297011, guid: c61e0d987c87c5e4a808426066909b61,
         type: 3}
       propertyPath: music
-      value: MainGameMusic
+      value: MainMenuMusic
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c61e0d987c87c5e4a808426066909b61, type: 3}
